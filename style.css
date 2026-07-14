@@ -1,12 +1,14 @@
 /* tmasoneconomics.com - minimal sidebar academic style */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * { box-sizing: border-box; }
 html { font-size: 16px; }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1c1c1c;
   background: #fff;
   margin: 0;
-  line-height: 1.55;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 .layout {
   display: grid;
@@ -18,20 +20,22 @@ body {
 }
 /* ---- sidebar ---- */
 aside.side h1 {
-  font-size: 1.45rem;
-  letter-spacing: 0.01em;
-  margin: 0 0 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.5rem;
   color: #111;
 }
 aside.side nav a {
   display: block;
-  font-size: 0.88rem;
-  color: #333;
+  font-size: 0.85rem;
+  color: #3a3a3a;
   text-decoration: none;
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.6rem;
+  line-height: 1.45;
 }
 aside.side nav a:hover { text-decoration: underline; }
-aside.side nav a.current { color: #9a9a9a; }
+aside.side nav a.current { color: #a3a3a3; }
 /* ---- profile block ---- */
 .profile {
   display: grid;
@@ -46,9 +50,9 @@ aside.side nav a.current { color: #9a9a9a; }
   object-fit: cover;
   display: block;
 }
-.info p { margin: 0 0 0.85rem; font-size: 0.92rem; }
-.info b { display: block; font-size: 0.92rem; }
-.info a { color: #111; }
+.info p { margin: 0 0 0.9rem; font-size: 0.9rem; line-height: 1.5; }
+.info b { display: block; font-size: 0.9rem; font-weight: 600; }
+.info a { color: #1c1c1c; }
 /* ---- buttons ---- */
 .btns { margin: 0.4rem 0 2rem; }
 .btns a {
@@ -56,27 +60,28 @@ aside.side nav a.current { color: #9a9a9a; }
   background: #111;
   color: #fff;
   text-decoration: none;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
-  padding: 0.7em 1.25em;
+  padding: 0.8em 1.4em;
   margin: 0 0.6rem 0.6rem 0;
 }
 .btns a:hover { background: #444; }
 /* ---- body text ---- */
-main p { margin: 0 0 1rem; }
+main p { margin: 0 0 1.05rem; font-size: 0.94rem; }
 main a { color: #2b5aa0; text-decoration: none; }
 main a:hover { text-decoration: underline; }
 h2 {
-  font-size: 1.05rem;
-  letter-spacing: 0.02em;
-  margin: 2.2rem 0 0.8rem;
-  padding-top: 1.2rem;
-  border-top: 1px solid #e4e4e4;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 2.4rem 0 0.9rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid #e8e8e8;
 }
-h3 { font-size: 0.95rem; margin: 1.4rem 0 0.5rem; }
-p.small, .small { font-size: 0.88rem; color: #444; }
+h3 { font-size: 0.92rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+p.small, .small { font-size: 0.86rem; color: #555; }
 /* ---- publication and news lists ---- */
 main ul {
   list-style: none;
