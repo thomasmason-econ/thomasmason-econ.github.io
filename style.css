@@ -1,75 +1,105 @@
-/* tmasoneconomics.com - minimal economist style */
+/* tmasoneconomics.com - minimal sidebar academic style */
 * { box-sizing: border-box; }
-html { font-size: 17px; }
+html { font-size: 16px; }
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #1a1a1a;
-  background: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #fff;
   margin: 0;
   line-height: 1.55;
 }
-.wrap {
-  max-width: 44rem;
+.layout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 820px);
+  gap: 2.5rem;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 4rem;
+  padding: 2.2rem 1.4rem 4rem;
 }
-header.site {
-  border-bottom: 1px solid #0E2841;
-  padding-bottom: 0.8rem;
+/* ---- sidebar ---- */
+aside.side h1 {
+  font-size: 1.45rem;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.4rem;
+  color: #111;
+}
+aside.side nav a {
+  display: block;
+  font-size: 0.88rem;
+  color: #333;
+  text-decoration: none;
+  margin: 0 0 0.55rem;
+}
+aside.side nav a:hover { text-decoration: underline; }
+aside.side nav a.current { color: #9a9a9a; }
+/* ---- profile block ---- */
+.profile {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: start;
   margin-bottom: 1.6rem;
 }
-header.site h1 {
-  font-size: 1.5rem;
-  margin: 0 0 0.1rem;
-  color: #0E2841;
-  letter-spacing: 0.01em;
+.profile img.portrait {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
 }
-header.site p.role {
-  margin: 0 0 0.7rem;
-  color: #444;
-  font-size: 0.95rem;
-}
-nav a {
-  margin-right: 1.1rem;
-  color: #0E2841;
+.info p { margin: 0 0 0.85rem; font-size: 0.92rem; }
+.info b { display: block; font-size: 0.92rem; }
+.info a { color: #111; }
+/* ---- buttons ---- */
+.btns { margin: 0.4rem 0 2rem; }
+.btns a {
+  display: inline-block;
+  background: #111;
+  color: #fff;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.7em 1.25em;
+  margin: 0 0.6rem 0.6rem 0;
 }
-nav a:hover, main a:hover { text-decoration: underline; }
-nav a.current { border-bottom: 2px solid #0E2841; }
-main a { color: #0E2841; }
+.btns a:hover { background: #444; }
+/* ---- body text ---- */
+main p { margin: 0 0 1rem; }
+main a { color: #2b5aa0; text-decoration: none; }
+main a:hover { text-decoration: underline; }
 h2 {
-  font-size: 1.15rem;
-  color: #0E2841;
-  margin: 1.8rem 0 0.5rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  margin: 2.2rem 0 0.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #e4e4e4;
 }
-h3 {
-  font-size: 1rem;
-  margin: 1.2rem 0 0.3rem;
+h3 { font-size: 0.95rem; margin: 1.4rem 0 0.5rem; }
+p.small, .small { font-size: 0.88rem; color: #444; }
+/* ---- publication and news lists ---- */
+main ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1.2rem;
 }
-ul { padding-left: 1.2rem; }
-li { margin-bottom: 0.45rem; }
-p.small, li.small, footer { font-size: 0.88rem; color: #555; }
+main ul li { margin-bottom: 0.7rem; font-size: 0.93rem; }
+ul.news li { margin-bottom: 0.55rem; }
+ul.news .date { color: #888; margin-right: 0.7rem; font-variant-numeric: tabular-nums; }
+/* ---- footer ---- */
 footer {
-  border-top: 1px solid #ddd;
+  grid-column: 1 / -1;
   margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #999;
+  border-top: 1px solid #e4e4e4;
   padding-top: 0.8rem;
 }
-.news li { margin-bottom: 0.3rem; }
-.news .date { color: #777; font-variant-numeric: tabular-nums; margin-right: 0.4rem; }
-@media (max-width: 480px) {
-  html { font-size: 16px; }
-  nav a { margin-right: 0.8rem; }
-}
-
-img.portrait {
-  float: right;
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin: 0 0 0.8rem 1.2rem;
-}
-@media (max-width: 480px) {
-  img.portrait { width: 100px; height: 100px; }
+/* ---- narrow screens ---- */
+@media (max-width: 760px) {
+  .layout { grid-template-columns: 1fr; gap: 1.2rem; padding-top: 1.4rem; }
+  aside.side h1 { margin-bottom: 0.7rem; }
+  aside.side nav a { display: inline-block; margin: 0 0.9rem 0.4rem 0; }
+  .profile { grid-template-columns: 1fr; }
+  .profile img.portrait { max-width: 300px; }
 }
