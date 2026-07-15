@@ -89,6 +89,8 @@ main ul {
   margin: 0 0 1.2rem;
 }
 main ul li { margin-bottom: 0.7rem; font-size: 0.93rem; }
+ul.bul { list-style: disc; padding-left: 1.15rem; margin: 0 0 1.3rem; }
+ul.bul li { margin-bottom: 0.45rem; }
 ul.news li { margin-bottom: 0.55rem; }
 ul.news .date { color: #888; margin-right: 0.7rem; font-variant-numeric: tabular-nums; }
 /* ---- footer ---- */
