@@ -7,7 +7,7 @@
 html { font-size: 16px; }
 body {
   font-family: "Mulish", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #262626;
+  color: #000;
   background: #fff;
   margin: 0;
   line-height: 1.6;
@@ -102,7 +102,7 @@ h2 {
 h3 {
   font-size: 0.975rem;
   font-weight: 700;
-  color: #121212;
+  color: #3a5a8c;
   margin: 1.8rem 0 0.6rem;
 }
 p.small, .small { font-size: 0.82rem; color: #8a8a8a; }
