@@ -48,7 +48,7 @@ aside.side .portrait {
   width: 100%;
   height: auto;
   display: block;
-  margin-top: 1.6rem;
+  margin: 0 0 1.3rem;
   border-radius: 2px;
 }
 .info { margin-bottom: 1.7rem; }
@@ -130,5 +130,5 @@ footer {
   .layout { grid-template-columns: 1fr; gap: 1.2rem; padding: 1.4rem 1.2rem 3rem; }
   aside.side h1 { margin-bottom: 0.8rem; }
   aside.side nav a { display: inline-block; margin: 0 0.9rem 0.4rem 0; }
-  aside.side .portrait { max-width: 170px; margin-top: 1rem; }
+  aside.side .portrait { max-width: 150px; margin: 0 0 1rem; }
 }
