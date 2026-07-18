@@ -11,8 +11,7 @@ body {
   background: #fcfcf9;
   margin: 0;
   line-height: 1.6;
-  letter-spacing: 0.02em;
-  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.015em;
 }
 .layout {
   display: grid;
@@ -84,7 +83,7 @@ aside.side .portrait {
 }
 .btns a:hover { background: #0a1d30; }
 /* ---- body text ---- */
-main p { margin: 0 0 1.05rem; font-size: 0.925rem; font-weight: 500; }
+main p { margin: 0 0 1.05rem; font-size: 1rem; font-weight: 500; }
 main a {
   color: #000;
   text-decoration: underline;
@@ -113,7 +112,7 @@ main ul {
   padding-left: 0;
   margin: 0 0 1.3rem;
 }
-main ul li { margin-bottom: 0.7rem; font-size: 0.925rem; font-weight: 500; }
+main ul li { margin-bottom: 0.7rem; font-size: 1rem; font-weight: 500; }
 ul.bul { list-style: disc; padding-left: 1.15rem; margin: 0 0 1.4rem; }
 ul.bul li { margin-bottom: 0.5rem; }
 /* ---- footer ---- */
