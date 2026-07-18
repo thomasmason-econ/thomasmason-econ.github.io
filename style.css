@@ -29,7 +29,7 @@ aside.side h1 {
   letter-spacing: 0;
   line-height: 1.2;
   margin: 0 0 1.6rem;
-  color: #121212;
+  color: #0e2841;
 }
 aside.side nav a {
   display: block;
@@ -64,7 +64,7 @@ aside.side .portrait {
   display: block;
   font-size: 0.975rem;
   font-weight: 700;
-  color: #121212;
+  color: #0e2841;
   margin-bottom: 0.15rem;
 }
 .info a { color: #121212; }
@@ -72,7 +72,7 @@ aside.side .portrait {
 .btns { margin: 0.5rem 0 2.2rem; }
 .btns a {
   display: inline-block;
-  background: #272727;
+  background: #0e2841;
   color: #fff;
   text-decoration: none;
   font-size: 0.75rem;
@@ -82,7 +82,7 @@ aside.side .portrait {
   padding: 0.9em 1.5em;
   margin: 0 0.6rem 0.6rem 0;
 }
-.btns a:hover { background: #000; }
+.btns a:hover { background: #0a1d30; }
 /* ---- body text ---- */
 main p { margin: 0 0 1.05rem; font-size: 0.875rem; }
 main a {
