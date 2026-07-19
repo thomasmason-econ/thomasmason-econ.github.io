@@ -1,7 +1,4 @@
-/* tmasoneconomics.com - minimal sidebar academic style
-   Typography tuned to measured characteristics: geometric sans (Mulish,
-   free equivalent of proxima-nova), near-black #121212 headings at 500-700,
-   14px grey body, black underlined links, dark square buttons. */
+/* tmasoneconomics.com - centred single-column academic layout */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
 * { box-sizing: border-box; }
 html { font-size: 16px; }
@@ -13,76 +10,60 @@ body {
   line-height: 1.6;
   letter-spacing: 0.015em;
 }
-.layout {
-  display: grid;
-  grid-template-columns: 195px minmax(0, 680px);
-  gap: 2.8rem;
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 2.4rem 2rem 4rem 2rem;
+.wrap { max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem 3.5rem; }
+/* ---- hero ---- */
+.hero { text-align: center; margin-bottom: 2.4rem; }
+.hero .portrait {
+  width: 132px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.3rem;
+  border-radius: 8px;
 }
-/* ---- sidebar ---- */
-aside.side h1 {
-  font-size: 1.625rem;
+.hero h1 {
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 1.2;
-  margin: 0 0 1.6rem;
+  line-height: 1.15;
   color: #0e2841;
+  margin: 0 0 0.55rem;
 }
-aside.side nav a {
-  display: block;
-  font-size: 1rem;
+.affil {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #5a5a5a;
+  line-height: 1.4;
+  max-width: 30rem;
+  margin: 0 auto 1.1rem;
+}
+.hero nav { margin-bottom: 1.3rem; }
+.hero nav a {
+  font-size: 0.95rem;
   font-weight: 500;
   color: #1f1f1f;
   text-decoration: none;
-  margin: 0 0 0.55rem;
-  line-height: 1.6;
+  margin: 0 0.55rem;
   letter-spacing: 0;
 }
-aside.side nav a:hover { text-decoration: underline; }
-aside.side nav a.current { color: #a3a3a3; }
-/* ---- sidebar photo + info ---- */
-aside.side .portrait {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 0 1.9rem;
-  border-radius: 2px;
-}
-.info { margin-bottom: 1.7rem; }
-.info p {
-  margin: 0 0 0.95rem;
-  font-size: 0.975rem;
-  line-height: 1.25;
-  font-weight: 500;
-  color: #121212;
-  letter-spacing: 0.01em;
-}
-.info b {
-  display: block;
-  font-size: 0.975rem;
-  font-weight: 700;
-  color: #0e2841;
-  margin-bottom: 0.15rem;
-}
-.info a { color: #121212; }
-/* ---- buttons ---- */
-.btns { margin: 0.5rem 0 2.2rem; }
+.hero nav a:hover { text-decoration: underline; }
+.hero nav a.current { color: #a3a3a3; }
+/* ---- buttons (centred) ---- */
+.btns { margin: 0.3rem 0 0; }
 .btns a {
   display: inline-block;
   background: #0e2841;
   color: #fff;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 0.9em 1.5em;
-  margin: 0 0.6rem 0.6rem 0;
+  padding: 0.8em 1.3em;
+  margin: 0 0.3rem 0.55rem;
 }
 .btns a:hover { background: #0a1d30; }
 /* ---- body text ---- */
+main { text-align: left; }
 main p { margin: 0 0 1.05rem; font-size: 1rem; font-weight: 500; }
 main a {
   color: #000;
@@ -92,14 +73,14 @@ main a {
 }
 main a:hover { color: #555; }
 h2 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   color: #121212;
   margin: 2.8rem 0 1rem;
 }
 h3 {
-  font-size: 0.975rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #2c4a72;
   margin: 1.8rem 0 0.6rem;
@@ -107,28 +88,24 @@ h3 {
 h3.dark { color: #121212; }
 p.small, .small { font-size: 0.82rem; color: #8a8a8a; }
 .credit { margin-top: 2.4rem; font-size: 0.82rem; font-weight: 400; font-style: italic; color: #a0a0a0; }
-/* ---- publication and overview lists ---- */
-main ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 1.3rem;
-}
+/* ---- lists ---- */
+main ul { list-style: none; padding-left: 0; margin: 0 0 1.3rem; }
 main ul li { margin-bottom: 0.7rem; font-size: 1rem; font-weight: 500; }
 ul.bul { list-style: disc; padding-left: 1.15rem; margin: 0 0 1.4rem; }
 ul.bul li { margin-bottom: 0.5rem; }
 /* ---- footer ---- */
 footer {
-  grid-column: 1 / -1;
-  margin-top: 3rem;
-  font-size: 0.8rem;
-  color: #a3a3a3;
+  margin-top: 3.5rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #8a8a8a;
   border-top: 1px solid #ececec;
-  padding-top: 0.8rem;
+  padding-top: 1.2rem;
 }
+footer a { color: #8a8a8a; }
 /* ---- narrow screens ---- */
-@media (max-width: 760px) {
-  .layout { grid-template-columns: 1fr; gap: 1.2rem; padding: 1.4rem 1.2rem 3rem; }
-  aside.side h1 { margin-bottom: 0.8rem; }
-  aside.side nav a { display: inline-block; margin: 0 0.9rem 0.4rem 0; }
-  aside.side .portrait { max-width: 150px; margin: 0 0 1rem; }
+@media (max-width: 620px) {
+  .wrap { padding: 2rem 1.2rem 2.5rem; }
+  .hero h1 { font-size: 1.85rem; }
+  .hero .portrait { width: 116px; }
 }
