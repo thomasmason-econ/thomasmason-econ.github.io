@@ -10,6 +10,7 @@
 <body>
 <div class="wrap">
 <header class="hero">
+  <canvas class="hero-bg" aria-hidden="true"></canvas>
   <img src="headshot.jpg" alt="Thomas Mason" class="portrait">
   <h1>Thomas Mason</h1>
   <p class="credit">This website was created by Tom in collaboration with Claude (Anthropic), most recently Claude Opus 4.8.</p>
@@ -147,5 +148,20 @@
 Thomas Mason &middot; tmasoneconomics.com
 </footer>
 </div>
+<script>
+(function(){
+  var c=document.querySelector('.hero-bg'); if(!c) return;
+  var ctx,W,H,blobs,raf,STONE='#f4f2ea';
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){var r=c.getBoundingClientRect();var d=Math.min(window.devicePixelRatio||1,2);c.width=Math.max(1,r.width*d);c.height=Math.max(1,r.height*d);ctx=c.getContext('2d');ctx.setTransform(d,0,0,d,0,0);W=r.width;H=r.height;}
+  function initBlobs(){blobs=[];for(var i=0;i<4;i++){blobs.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.26,vy:(Math.random()-.5)*.2,r:120+Math.random()*90});}}
+  function draw(move){ctx.fillStyle=STONE;ctx.fillRect(0,0,W,H);for(var i=0;i<blobs.length;i++){var b=blobs[i];if(move){b.x+=b.vx;b.y+=b.vy;if(b.x<-50||b.x>W+50)b.vx*=-1;if(b.y<-50||b.y>H+50)b.vy*=-1;}var g=ctx.createRadialGradient(b.x,b.y,0,b.x,b.y,b.r);g.addColorStop(0,'rgba(30,80,56,0.12)');g.addColorStop(1,'rgba(30,80,56,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(b.x,b.y,b.r,0,7);ctx.fill();}}
+  function loop(){draw(true);raf=requestAnimationFrame(loop);}
+  function start(){size();initBlobs();if(reduce){draw(false);}else{if(raf)cancelAnimationFrame(raf);loop();}}
+  start();
+  window.addEventListener('load',start);
+  var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(start,200);});
+})();
+</script>
 </body>
 </html>
