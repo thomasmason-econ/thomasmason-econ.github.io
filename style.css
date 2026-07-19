@@ -5,7 +5,7 @@ html { font-size: 16px; }
 body {
   font-family: "Mulish", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
-  background: #fcfcf9;
+  background: #faf8f1;
   margin: 0;
   line-height: 1.6;
   letter-spacing: 0.015em;
@@ -25,7 +25,7 @@ body {
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.15;
-  color: #0e2841;
+  color: #1a4068;
   margin: 0 0 0.55rem;
 }
 .affil {
@@ -39,19 +39,21 @@ body {
 .hero nav { margin-bottom: 1.3rem; }
 .hero nav a {
   font-size: 0.95rem;
-  font-weight: 500;
-  color: #1f1f1f;
-  text-decoration: none;
+  font-weight: 600;
+  color: #1a4068;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   margin: 0 0.55rem;
   letter-spacing: 0;
 }
-.hero nav a:hover { text-decoration: underline; }
-.hero nav a.current { color: #a3a3a3; }
+.hero nav a:hover { color: #12314f; }
+.hero nav a.current { color: #9a9a9a; text-decoration: none; }
 /* ---- buttons (centred) ---- */
 .btns { margin: 0.3rem 0 0; }
 .btns a {
   display: inline-block;
-  background: #0e2841;
+  background: #1a4068;
   color: #fff;
   text-decoration: none;
   font-size: 0.72rem;
@@ -61,7 +63,7 @@ body {
   padding: 0.8em 1.3em;
   margin: 0 0.3rem 0.55rem;
 }
-.btns a:hover { background: #0a1d30; }
+.btns a:hover { background: #12314f; }
 /* ---- body text ---- */
 main { text-align: left; }
 main p { margin: 0 0 1.05rem; font-size: 1rem; font-weight: 500; }
@@ -87,7 +89,7 @@ h3 {
 }
 h3.dark { color: #121212; }
 p.small, .small { font-size: 0.82rem; color: #8a8a8a; }
-.credit { margin-top: 2.4rem; font-size: 0.82rem; font-weight: 400; font-style: italic; color: #a0a0a0; }
+.credit { margin: 0.2rem auto 1.2rem; max-width: 30rem; font-size: 0.82rem; font-weight: 400; font-style: italic; color: #9a9a9a; }
 /* ---- lists ---- */
 main ul { list-style: none; padding-left: 0; margin: 0 0 1.3rem; }
 main ul li { margin-bottom: 0.7rem; font-size: 1rem; font-weight: 500; }
