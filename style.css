@@ -25,7 +25,7 @@ body {
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.15;
-  color: #1a4068;
+  color: #1e5038;
   margin: 0 0 0.55rem;
 }
 .affil {
@@ -53,7 +53,7 @@ body {
 .btns { margin: 0.3rem 0 0; }
 .btns a {
   display: inline-block;
-  background: #1a4068;
+  background: #1e5038;
   color: #fff;
   text-decoration: none;
   font-size: 0.72rem;
@@ -63,7 +63,7 @@ body {
   padding: 0.8em 1.3em;
   margin: 0 0.3rem 0.55rem;
 }
-.btns a:hover { background: #12314f; }
+.btns a:hover { background: #163a29; }
 /* ---- body text ---- */
 main { text-align: left; }
 main p { margin: 0 0 1.05rem; font-size: 1rem; font-weight: 500; }
@@ -84,7 +84,7 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: 700;
-  color: #2c4a72;
+  color: #3a6b52;
   margin: 1.8rem 0 0.6rem;
 }
 h3.dark { color: #121212; }
@@ -93,7 +93,7 @@ summary {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.01em;
-  color: #121212;
+  color: #1e5038;
   cursor: pointer;
   padding: 0.3rem 0;
   list-style: none;
@@ -105,12 +105,12 @@ summary::before {
   display: inline-block;
   width: 0.9em;
   margin-right: 0.35rem;
-  color: #1a4068;
+  color: #1e5038;
   transform: rotate(0deg);
   transition: transform 0.15s ease;
 }
 details[open] > summary::before { transform: rotate(90deg); }
-summary:hover { color: #1a4068; }
+summary:hover { color: #163a29; }
 details[open] { padding-bottom: 0.7rem; }
 details > *:not(summary):first-of-type { margin-top: 0.7rem; }
 p.small, .small { font-size: 0.82rem; color: #8a8a8a; }
