@@ -88,6 +88,31 @@ h3 {
   margin: 1.8rem 0 0.6rem;
 }
 h3.dark { color: #121212; }
+details { border-top: 1px solid #e7e2d6; margin-top: 2rem; padding: 0.5rem 0 0.2rem; }
+summary {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #121212;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  list-style: none;
+  transition: color 0.12s;
+}
+summary::-webkit-details-marker { display: none; }
+summary::before {
+  content: "\203A";
+  display: inline-block;
+  width: 0.9em;
+  margin-right: 0.35rem;
+  color: #1a4068;
+  transform: rotate(0deg);
+  transition: transform 0.15s ease;
+}
+details[open] > summary::before { transform: rotate(90deg); }
+summary:hover { color: #1a4068; }
+details[open] { padding-bottom: 0.7rem; }
+details > *:not(summary):first-of-type { margin-top: 0.7rem; }
 p.small, .small { font-size: 0.82rem; color: #8a8a8a; }
 .credit { margin: 0.2rem auto 1.2rem; max-width: 30rem; font-size: 0.82rem; font-weight: 400; font-style: italic; color: #9a9a9a; }
 /* ---- lists ---- */
