@@ -18,8 +18,8 @@ body {
   grid-template-columns: 195px minmax(0, 680px);
   gap: 2.8rem;
   max-width: 940px;
-  margin: 0;
-  padding: 2.4rem 1.4rem 4rem 2.6rem;
+  margin: 0 auto;
+  padding: 2.4rem 2rem 4rem 2rem;
 }
 /* ---- sidebar ---- */
 aside.side h1 {
