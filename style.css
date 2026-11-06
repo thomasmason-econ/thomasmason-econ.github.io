@@ -121,6 +121,13 @@ details[open] > summary::before { transform: rotate(90deg); }
 summary:hover { color: #163a29; }
 details[open] { padding-bottom: 0.7rem; }
 details > *:not(summary):first-of-type { margin-top: 0.7rem; }
+/* ---- nested theme dropdowns inside Published works ---- */
+details.theme { border-top: none; margin-top: 0.5rem; padding: 0; }
+details.theme > summary { font-size: 1.2rem; color: #3a6b52; padding: 0.3rem 0; }
+details.theme > summary::before { color: #3a6b52; }
+details.theme > summary:hover { color: #1e5038; }
+details.theme[open] { padding-bottom: 0.3rem; }
+.theme-intro { display: block; font-family: "Mulish", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 0.95rem; font-weight: 500; font-style: italic; color: #5a5a5a; margin: 0.35rem 0 0 1.25rem; }
 p.small, .small { font-size: 0.82rem; color: #8a8a8a; }
 .credit { margin: 0.2rem auto 1.2rem; max-width: 30rem; font-size: 0.82rem; font-weight: 400; font-style: italic; color: #9a9a9a; }
 /* ---- lists ---- */
